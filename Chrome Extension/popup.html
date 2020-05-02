@@ -2,27 +2,46 @@
 <html>
   <head>
 
-    <title>SafePay</title>
-    <style>
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!--Import materialize.css-->
+    <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
 
-      body{
-        margin: 10px;
-      }
+    <title>SafePay</title>
+
+    <style>
+      body{ margin: 20px;}
 
       button {
         height: 30px;
         width: 90px;
         outline: none;
       }
-
     </style>
 
   </head>
   <body>
 
-    <img src='images/logo.png' width="180" height="120" id='logo'>
-    <button onclick="signIn();" id="signIn" >Sign In</button>
+    <div class="parallax-container">
+      <div class="parallax"><img src="images/bg.gif"></div>
+      <div class="section no-pad-bot" id="index-banner">
+        <div class="container">
+          <img class:"center" src='images/logo.png' width="180" height="120" id='logo'>
+          <h2 class="header center black-text">SafePay</h1>
+          <div class="row center">
+            <h5 class="header light">A decentralized storage system for your payment info</h5>
+          </div>
+          <div class="row center">
+            <a class="waves-effect waves-light btn">Sign In</a>
+          </div>
+          <br><br>
+
+        </div>
+      </div>
+    </div>
+
     <script src="popup.js"></script>
+    <script type="text/javascript" src="materialize.min.js"></script>
 
   </body>
 </html>
