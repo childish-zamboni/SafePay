@@ -1,16 +1,28 @@
 <!DOCTYPE html>
 <html>
   <head>
+
+    <title>SafePay</title>
     <style>
+
+      body{
+        margin: 10px;
+      }
+
       button {
-        height: 500px;
-        width: 400px;
+        height: 30px;
+        width: 90px;
         outline: none;
       }
+
     </style>
+
   </head>
   <body>
-    <button id="changeColor"></button>
+
+    <img src='images/logo.png' width="180" height="120" id='logo'>
+    <button onclick="signIn();" id="signIn" >Sign In</button>
     <script src="popup.js"></script>
+
   </body>
 </html>
