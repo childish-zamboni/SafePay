@@ -17,12 +17,14 @@ function saveCard() {
   userSession.putFile("cards", JSON.stringify(cards), options);
 }
 
-function newCard(name, number) {
+function newCard(label, name, number, date) {
   cards.push({
+    label: label,
     name: name,
-    number: number
+    number: number,
+    date: date
   });
-  saveCards()
+  saveCard()
 }
 
 function deleteCard(card) {
