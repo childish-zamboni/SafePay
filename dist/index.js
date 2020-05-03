@@ -39,10 +39,10 @@ document.addEventListener("DOMContentLoaded", function () {
       event.preventDefault();
       userSession.redirectToSignIn();
     })
-    document.getElementById('signout-button').addEventListener('click', function (event) {
+    /*document.getElementById('signout-button').addEventListener('click', function (event) {
       event.preventDefault();
       userSession.signUserOut(window.location.href);
-    })
+    })*/
 
     if (userSession.isUserSignedIn()) {
       var profile = userSession.loadUserData().profile

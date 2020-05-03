@@ -3,7 +3,7 @@ var loginScreen;
 document.addEventListener("DOMContentLoaded", function () {
   document.getElementById('sign_in').addEventListener('click', function (event) {
     //event.preventDefault();
-    loginScreen = window.open('https://safepay-b2c1f.firebaseapp.com/','popup','width=600,height=600');
+    loginScreen = window.open('https://safepay-b2c1f.firebaseapp.com/','popup','width=420,height=344');
   });
 });
 
