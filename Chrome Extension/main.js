@@ -1,6 +1,7 @@
 'use strict';
 
+var cards;
+
 document.addEventListener('DOMContentLoaded', function() {
-    var elems = document.querySelectorAll('.modal');
-    var instances = M.Modal.init(elems, options);
-  });
+  cards = JSON.parse(localStorage.getItem('cards_str'));
+});

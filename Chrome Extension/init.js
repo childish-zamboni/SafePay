@@ -7,12 +7,10 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 });
 
-var cards;
-
 window.addEventListener("message", receiveMessage, false);
 
 function receiveMessage(event) {
   loginScreen.close();
-  cards = JSON.parse(event.data);
-  var newWin = window.open("/main.html?cards=" + event.data, "_self");
+  localStorage.setItem('cards_str', event.data);
+  window.open('/main.html', '_self')
 }
