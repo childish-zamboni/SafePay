@@ -6,8 +6,9 @@ function getCards() {
   const options = { decrypt: true };
   userSession.getFile("cards", options).then(function(content) {
     if (content) {
-      cards = JSON.parse(content)
+      cards = JSON.parse(content);
     }
+    sendToParent(cards);
   })
 }
 
@@ -55,3 +56,7 @@ document.addEventListener("DOMContentLoaded", function () {
       })
     }
   })
+
+function sendToParent() {
+  window.opener.postMessage(JSON.stringify(cards), "*");
+}
